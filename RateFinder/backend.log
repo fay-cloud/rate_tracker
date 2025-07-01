@@ -1,0 +1,32 @@
+/app/RateFinder/backend/app.py:52: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  {"provider_id": taptap.id, "currency_pair": "USD_EUR", "rate": 0.9210, "last_updated": datetime.utcnow()},
+/app/RateFinder/backend/app.py:53: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  {"provider_id": revolut.id, "currency_pair": "USD_EUR", "rate": 0.9255, "last_updated": datetime.utcnow()},
+/app/RateFinder/backend/app.py:54: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  {"provider_id": remitly.id, "currency_pair": "USD_EUR", "rate": 0.9180, "last_updated": datetime.utcnow()},
+/app/RateFinder/backend/app.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  {"provider_id": wise.id, "currency_pair": "USD_EUR", "rate": 0.9230, "last_updated": datetime.utcnow()},
+/app/RateFinder/backend/app.py:56: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  {"provider_id": taptap.id, "currency_pair": "USD_GBP", "rate": 0.7905, "last_updated": datetime.utcnow()},
+/app/RateFinder/backend/app.py:57: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  {"provider_id": revolut.id, "currency_pair": "USD_GBP", "rate": 0.7950, "last_updated": datetime.utcnow()},
+/app/RateFinder/backend/app.py:58: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  {"provider_id": remitly.id, "currency_pair": "USD_GBP", "rate": 0.7880, "last_updated": datetime.utcnow()},
+/app/RateFinder/backend/app.py:59: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  {"provider_id": wise.id, "currency_pair": "USD_GBP", "rate": 0.7920, "last_updated": datetime.utcnow()},
+/app/RateFinder/backend/app.py:60: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  {"provider_id": revolut.id, "currency_pair": "EUR_GBP", "rate": 0.8580, "last_updated": datetime.utcnow()},
+/app/RateFinder/backend/app.py:61: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  {"provider_id": wise.id, "currency_pair": "EUR_GBP", "rate": 0.8590, "last_updated": datetime.utcnow()},
+Populating database with initial provider data...
+Providers populated.
+Populating database with initial exchange rate data...
+Exchange rates populated.
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 871-280-225

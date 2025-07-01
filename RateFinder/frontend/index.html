@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RateFinder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <!-- App Logo will go here -->
+            <img src="images/logo_placeholder.png" alt="RateFinder Logo" id="appLogo">
+        </div>
+        <div class="controls-container">
+            <label for="currencyPairSelect">Select Currency Pair:</label>
+            <select id="currencyPairSelect">
+                <!-- Options will be populated by JavaScript -->
+                <option value="">Loading...</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <section id="providerListSection">
+            <h2>Exchange Rates</h2>
+            <div id="providerListContainer">
+                <!-- Provider rate cards will be dynamically inserted here by JavaScript -->
+                <p class="loading-message">Select a currency pair to see rates.</p>
+            </div>
+        </section>
+
+        <section id="currencyConverterSection">
+            <h2>Currency Converter</h2>
+            <div class="converter-controls">
+                <input type="number" id="amountInput" placeholder="Amount" value="100">
+                <select id="fromCurrencySelect">
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+                <span>to</span>
+                <select id="toCurrencySelect">
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+                <button id="convertButton">Convert</button>
+            </div>
+            <div id="conversionResult">
+                <p>Result: <span id="convertedAmount">---</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 RateFinder. All rates are for informational purposes only.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

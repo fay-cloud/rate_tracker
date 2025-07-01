@@ -1,0 +1,6 @@
+Flask
+Flask-SQLAlchemy
+Flask-CORS # For Cross-Origin Resource Sharing
+# requests # For fetching data from external APIs
+# apscheduler # For scheduling daily tasks
+# python-dotenv # For managing environment variables
