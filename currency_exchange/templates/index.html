@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange Rates</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        h1 { color: #2c3e50; text-align: center; }
+        .container { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #3498db; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .get-button {
+            background-color: #2ecc71;
+            color: white;
+            padding: 8px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .get-button:hover { background-color: #27ae60; }
+        .no-rates { text-align: center; color: #7f8c8d; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exchange Rate Comparison</h1>
+
+        {% if exchange_rates %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Exchange Rate (to USD, example)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for platform, rate in exchange_rates.items() %}
+                    <tr>
+                        <td>{{ platform }}</td>
+                        <td>{{ "%.4f"|format(rate|float) }}</td>
+                        <td>
+                            <a href="{{ url_for('register', platform=platform) }}" class="get-button" target="_blank">Get Rate</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p class="no-rates">No exchange rates available at the moment. Please check back later.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
